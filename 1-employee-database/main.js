@@ -1,7 +1,7 @@
 (async function () {
   const data = await fetch("./data.json");
   const res = await data.json();
-  console.log(res);
+
   let employees = res;
   let selectedEmployeeId = employees[0].id;
   let selectedEmployee = employees[0];
@@ -9,12 +9,9 @@
   const employeeList = document.querySelector(".employees__names--list");
   const employeeInfo = document.querySelector(".employees__single--info");
 
-  //Add Employee logic
   const createEmployee = document.querySelector(".createEmployee");
   const addEmployeeModal = document.querySelector(".addEmployee");
   const addEmployeeForm = document.querySelector(".addEmployee_create");
-
-  console.log("addEmployeeForm", addEmployeeForm);
 
   createEmployee.addEventListener("click", (e) => {
     addEmployeeModal.style.display = "flex";
@@ -51,7 +48,6 @@
 
   });
 
-  //select a employee logic
   employeeList.addEventListener("click", (e) => {
  
     if (e.target.tagName === "SPAN" && selectedEmployeeId !== e.target.parentNode.id) {
