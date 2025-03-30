@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.otp-box{
+  display: flex;
+  gap: 10px;
+}
+
+.otp-input{
+  height: 50px;
+  width: 50px;
+  font-size: 36px;
+}
+.otp-input :focus{
+  border: blue;
+}

@@ -1,0 +1,20 @@
+[
+  { "id": 123, "name": "public", "isFolder": true, "children": [] },
+  {
+    "id": 2123,
+    "name": "src",
+    "isFolder": true,
+    "children": [
+      {
+        "id": 12213,
+        "name": "components",
+        "isFolder": true,
+        "children": [
+          { "id": 12324, "name": "buttons", "isFolder": false, "children": [] }
+        ]
+      }
+    ]
+  },
+  { "id": 12123, "name": "package.json", "isFolder": false, "children": [] },
+  { "id": 12445, "name": ".gitignore", "isFolder": false, "children": [] }
+]
